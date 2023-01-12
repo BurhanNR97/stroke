@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/layout_bobot"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_jarakkriteria"
+            android:layout_width="80dp"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:text="Alternatif"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:background="@drawable/border_right_bottom"
+            android:textColor="#000"/>
+
+        <TextView
+            android:id="@+id/tv_Dplus"
+            android:textAlignment="center"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:text="D+"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:background="@drawable/border_right_bottom"
+            android:textColor="#000"/>
+
+        <TextView
+            android:id="@+id/tv_Dmin"
+            android:textAlignment="center"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:text="D-"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:background="@drawable/border_right_bottom"
+            android:textColor="#000"/>
+
+        <TextView
+            android:id="@+id/tv_jarakHasil"
+            android:textAlignment="center"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:text="Hasil"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:background="@drawable/border_right_bottom"
+            android:textColor="#000"/>
+    </LinearLayout>
+
+</LinearLayout>

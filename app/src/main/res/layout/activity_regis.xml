@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activities.RegisActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HALAMAN REGISTRASI"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:textSize="25dp"/>
+
+        <EditText
+            android:id="@+id/regisNIK"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="No Identitas"
+            android:textColorHint="#2CA7E0"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/ic_id"
+            android:drawablePadding="10dp"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/edit"
+            android:padding="20dp"/>
+
+        <EditText
+            android:id="@+id/regisNama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="Nama"
+            android:textColorHint="#2CA7E0"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/ic_person"
+            android:drawablePadding="10dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/edit"
+            android:padding="20dp"/>
+
+        <EditText
+            android:id="@+id/regisUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:hint="username"
+            android:textColorHint="#2CA7E0"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/ic_person"
+            android:drawablePadding="10dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/edit"
+            android:padding="20dp"/>
+
+        <EditText
+            android:id="@+id/regisPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="password"
+            android:textColorHint="#2CA7E0"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/ic_lock"
+            android:drawablePadding="10dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/edit"
+            android:padding="20dp"/>
+
+        <Button
+            android:id="@+id/btnDaftar"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:text="Daftar"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button1"/>
+
+        <TextView
+            android:onClick="kemenulogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:text="Sudah punya akun ? Masuk disini"
+            android:fontFamily="sans-serif-medium"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:textSize="18dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

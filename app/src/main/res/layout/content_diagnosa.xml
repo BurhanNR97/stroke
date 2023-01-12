@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_diagnosa"
+    tools:context=".activities.DiagnosaActivity">
+
+    <ListView
+        android:id="@+id/list_diagnosa"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:choiceMode="multipleChoice"
+        android:layout_weight="1" />
+
+    <Button
+        android:layout_gravity="center"
+        android:id="@+id/btn_hasil_diagnosa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:text="PROSES"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button_anim" />
+
+</LinearLayout>

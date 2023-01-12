@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.EditGejala"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbareditgejala"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorAccent"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/txID_Edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+        <EditText
+            android:layout_marginTop="10dp"
+            android:enabled="false"
+            android:background="@drawable/edit"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/txKode_EditGejala"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Kode Gejala Penyakit" />
+        <EditText
+            android:background="@drawable/edit"
+            android:padding="10dp"
+            android:id="@+id/txNama_EditGejala"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nama Gejala Penyakit"
+            android:layout_marginBottom="10dp"
+            android:inputType="textMultiLine"
+            android:scrollbars="vertical"/>
+        <EditText
+            android:background="@drawable/edit"
+            android:padding="10dp"
+            android:id="@+id/txBobot_EditGejala"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Bobot Gejala"
+            android:inputType="number"
+            android:scrollbars="vertical"/>
+    </LinearLayout>
+
+</LinearLayout>

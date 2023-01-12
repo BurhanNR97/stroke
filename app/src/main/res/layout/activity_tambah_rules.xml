@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.TambahRules"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarAddrules"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorAccent"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/txID_Addrules"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+        <EditText
+            android:layout_marginTop="10dp"
+            android:enabled="false"
+            android:background="@drawable/edit"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/txKode_AddRules"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Kode Rules" />
+        <Spinner
+            android:id="@+id/sp_alternatifAdd"
+            android:background="@drawable/edit"
+            android:popupBackground="@drawable/edit"
+            android:spinnerMode="dropdown"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp"
+            android:layout_height="wrap_content"/>
+        <Spinner
+            android:id="@+id/sp_kriteriaAdd"
+            android:background="@drawable/edit"
+            android:popupBackground="@drawable/edit"
+            android:spinnerMode="dropdown"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:background="@drawable/edit"
+            android:padding="10dp"
+            android:id="@+id/txNilai_addRules"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Bobot Gejala"
+            android:inputType="number"
+            android:scrollbars="vertical"/>
+    </LinearLayout>
+
+</LinearLayout>

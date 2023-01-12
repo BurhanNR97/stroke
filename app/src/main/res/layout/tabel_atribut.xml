@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/layout_atribut"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_atributkriteria"
+            android:layout_width="80dp"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:text="Kriteria"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:background="@drawable/border_right_bottom"
+            android:textColor="#000"/>
+
+        <TextView
+            android:id="@+id/tv_atributS1"
+            android:textAlignment="center"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:text="S1"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:background="@drawable/border_right_bottom"
+            android:textColor="#000"/>
+
+        <TextView
+            android:id="@+id/tv_atributS2"
+            android:textAlignment="center"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:text="S2"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:background="@drawable/border_right_bottom"
+            android:textColor="#000"/>
+
+        <TextView
+            android:id="@+id/tv_atributS3"
+            android:textAlignment="center"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:text="S3"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:background="@drawable/border_right_bottom"
+            android:textColor="#000"/>
+
+        <TextView
+            android:id="@+id/tv_atributS4"
+            android:textAlignment="center"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:text="S4"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:background="@drawable/border_right_bottom"
+            android:textColor="#000"/>
+    </LinearLayout>
+
+</LinearLayout>

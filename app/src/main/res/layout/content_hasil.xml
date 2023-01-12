@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:showIn="@layout/activity_hasil"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activities.DiagnosaActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="12dp">
+
+        <TextView
+            android:id="@+id/tv_gejala_dipilih"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Gejala Yang terpilih"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_list_gejala_dipilih"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/border1"
+            android:padding="12dp"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_gejala_dipilih" />
+
+        <TextView
+            android:id="@+id/tv_anak_anda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Pasien ini kemungkinan mengalami"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_list_gejala_dipilih" />
+
+        <TextView
+            android:id="@+id/tv_nama_penyakit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@id/tv_list_gejala_dipilih"
+            app:layout_constraintTop_toBottomOf="@id/tv_anak_anda" />
+
+        <TextView
+            android:id="@+id/tv_persentase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="24dp"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@id/tv_list_gejala_dipilih"
+            app:layout_constraintTop_toBottomOf="@id/tv_anak_anda" />
+
+        <Button
+            android:id="@+id/btn_topsis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/button_anim"
+            android:text="TAMPILKAN PERHITUNGAN"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_nama_penyakit" />
+
+        <LinearLayout
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:id="@+id/teksHasil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/border1"
+            android:padding="5dp"
+            android:textColor="@android:color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_topsis"
+            app:layout_constraintVertical_bias="1.0">
+
+            <RelativeLayout
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+
+                <Button
+                    android:id="@+id/btn_prev0"
+                    android:layout_width="35dp"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/ic_prev0"
+                    android:layout_height="35dp"/>
+                <Button
+                    android:id="@+id/btn_next0"
+                    android:visibility="gone"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/ic_next0"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"/>
+                <Button
+                    android:id="@+id/btn_prev1"
+                    android:visibility="gone"
+                    android:layout_width="35dp"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/ic_prev1"
+                    android:layout_height="35dp"/>
+                <Button
+                    android:id="@+id/btn_next1"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/ic_next1"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"/>
+                <Spinner
+                    android:id="@+id/spinner1"
+                    android:entries="@array/spinnerItems"
+                    android:textAlignment="center"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="230dp"
+                    android:background="@drawable/edit"
+                    android:layout_height="wrap_content"
+                    android:minHeight="35dp"/>
+            </RelativeLayout>
+
+            <include
+                layout="@layout/topsisss"/>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

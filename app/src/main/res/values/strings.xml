@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Diagnosa Penyakit Stroke</string>
+
+    <string-array name="spinnerItems">
+        <item>Tampilkan Semua</item>
+        <item>Nilai Bobot</item>
+        <item>Nilai Atribut</item>
+        <item>Matriks Normalisasi</item>
+        <item>Matriks Normalisasi Terbobot</item>
+        <item>Matriks Solusi Ideal</item>
+        <item>Jarak Solusi Ideal</item>
+    </string-array>
+</resources>
